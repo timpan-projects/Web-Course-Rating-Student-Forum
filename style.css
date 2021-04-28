@@ -1,0 +1,137 @@
+.score{
+    width: 1000px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.score_box{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    border:1px #AAAAAA solid;
+}
+
+.score_text{
+    font-size: 70px;
+}
+
+@media only screen and (max-width: 1125px) {
+    .score{
+        width: 650px;
+        height: 450px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .score_box{
+        width: 300px;
+        height: 200px;
+        border-radius: 5px;
+        border:1px #AAAAAA solid;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .score_text{
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .score{
+        width: 350px;
+        height: 650px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .score_box{
+        width: 300px;
+        height: 200px;
+        border-radius: 5px;
+        border:1px #AAAAAA solid;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .score_text{
+        font-size: 50px;
+    }
+}
+
+/* notice */
+.notice{
+    height: inherit;
+}
+.notice-btn{
+    height: inherit;
+    cursor: pointer;
+    padding: 4px;
+    position: relative;
+}
+.notice-num{
+    background-color: red;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 50%;
+    color: white;
+    line-height: 10px;
+    right: 5px;
+    top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 1px;
+    display: none;
+}
+
+.bell-icon{
+    height: 100%;
+    filter: brightness(50%);
+    transition: 0.5s;
+}
+.bell-icon:hover{
+    filter: brightness(100%);
+}
+.notice-item{
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    height: 60px;
+}
+.notice-item:hover{
+    background-color: #eeeeee;
+}
+.notice-list{
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    color: black;
+    width: 430px;
+    height: 0px;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.track:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.empty-message{
+    text-align: center;
+    color: gray;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.notice-context{
+    text-align: center;
+    margin: auto;
+}
